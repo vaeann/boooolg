@@ -18,7 +18,7 @@ install:
   # 安装主题
   #- git clone [你使用的主题的 Git 地址]
   # 删除docs文件夹
-  - rm -rf docs 
+  #- rm -rf docs 
 script:
   # 运行hugo命令
   - hugo

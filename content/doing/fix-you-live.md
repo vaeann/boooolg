@@ -1,5 +1,5 @@
 +++
-title = "Fix You (live)"
+title = "一起向往的生活啊"
 date = "2017-04-15T18:23:12+08:00"
 description = "Lights will guide you home"
 video = "QmXc6iyrXweAbYT1SkJZLDFWeQkgtv1GDQLDcBjhi1J5qv"

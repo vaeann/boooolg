@@ -184,7 +184,7 @@ uglyURLs = false
     #    pre = "internal"
     #    post = "archive"
     #[[menu.main]]
-    #    url = "/categories/"
+    #    url = "/doing/"
     #    name = "分类"
     #    weight = 3
     #    pre = "internal"
@@ -210,10 +210,10 @@ uglyURLs = false
         post = "archive"
         identifier = "icon1"
     [[menu.home]]
-        url = "/categories/"
+        url = "/doing/"
         weight = 2
         pre = "internal"
-        post = "th"
+        post = "heart"
         identifier = "icon2"
 	[[menu.home]]
         url = "/tags/"

@@ -254,12 +254,12 @@ uglyURLs = false
     [[menu.links]]
         url = "/tags/"
         name = "标签"
-        weight = 2
+        weight = 3
         pre = "internal"
     [[menu.links]]
-        url = "/categories/"
-        name = "分类"
-        weight = 3
+        url = "/archives/"
+        name = "文章"
+        weight = 2
         pre = "internal"
 
 ##########################################
@@ -446,7 +446,7 @@ uglyURLs = false
     # 说明：left（左边）或 right（右边）
 
     # 是否按月份分隔列表
-    groupByMonth = true
+    groupByMonth = false
 
     # 是否开启十二生肖
     chineseZodiac = true
@@ -1023,10 +1023,10 @@ uglyURLs = false
     # 文章更新徽章
 
     # 是否开启
-    enablePostUpdatedBadge = true
+    enablePostUpdatedBadge = false
 
     # 是否显示（全局设置）
-    displayUpdatedBadge = true
+    displayUpdatedBadge = false
     # 说明：文章的 Front Matter 中的 `badge`
     #      的的优先级高于此处
 
@@ -1089,7 +1089,7 @@ uglyURLs = false
     #      的的优先级高于此处
 
     # 相关文章数
-    relatedPostsNumber = 5
+    relatedPostsNumber = 3
 
     # 相关文章标题右边的图标
     relatedPostsIcon = "plus-circle"
@@ -1099,7 +1099,7 @@ uglyURLs = false
     # 文章的标签
 
     # 是否开启
-    enablePostTags = true
+    enablePostTags = false
 
     # 标签的图标
     postTagsIcon = "tag"
@@ -1182,7 +1182,7 @@ uglyURLs = false
     # 自定义页脚（支持 Markdown）
     customFooter = ""
 
-    displayBusuanziSiteUVAndPV = false
+    displayBusuanziSiteUVAndPV = true
     busuanziSiteUVText = "本站访客数"
     busuanziSiteUVIcon = "user"
     busuanziSitePVText = "本站访问量"

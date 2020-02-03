@@ -204,7 +204,7 @@ uglyURLs = false
 
 ## 首页的底部链接
     [[menu.home]]
-        url = "/"
+        url = "/posts/"
         weight = 1
         pre = "internal"
         post = "home"

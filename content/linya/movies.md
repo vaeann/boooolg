@@ -6,7 +6,7 @@ info = "[*GO HOME*](weiam.ml) (Stade de France, 2 September 2012)"
 tags = ["Doing"]
 weight = 1
 +++
-<hr class="coldplay" />	
+
 <video src="https://gateway.pinata.cloud/ipfs/QmYVri7jyBdPyfR8AgBLTgyTjiJifCgpeHFiFrKxowQeq8" poster="../images/fanghua.jpg" controls></video>	
-<hr class="coldplay" />	
+	
 

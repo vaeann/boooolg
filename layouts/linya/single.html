@@ -7,9 +7,9 @@
                     <div class="post-description">{{ . | markdownify | safeHTML }}</div>
                 {{ end }}
                 <div class="post-body">
-				 {{ .Content }}
+				
                     <hr class="coldplay" />
-                   
+                    {{ .Content }}
                     <div style="text-align: center">❤ uoY evoL aynilgneF</div>
                     <hr class="coldplay" />
                     <div class="coldplay-footer">— {{ with .Params.info }}{{ printf `%s | ` (. | markdownify) | safeHTML }}{{ end }}more @ <a href="/linya/">一起做的事</a></div>

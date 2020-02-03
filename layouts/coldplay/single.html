@@ -7,6 +7,7 @@
                     <div class="post-description">{{ . | markdownify | safeHTML }}</div>
                 {{ end }}
                 <div class="post-body">
+				 {{ .Content }}
                     <hr class="coldplay" />
                     <video src="{{ printf `%s%s` .Site.Params.videoHostURL .Params.video }}" controls></video>
                     <div style="text-align: center">❤ evoL ni eveileB</div>

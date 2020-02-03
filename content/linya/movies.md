@@ -8,6 +8,5 @@ weight = 1
 +++
 <hr class="coldplay" />	
 <video src="https://gateway.pinata.cloud/ipfs/QmYVri7jyBdPyfR8AgBLTgyTjiJifCgpeHFiFrKxowQeq8" poster="../images/fanghua.jpg" controls></video>	
-<div style="text-align: center">❤ evoL ni eveileB</div>	
 <hr class="coldplay" />	
 

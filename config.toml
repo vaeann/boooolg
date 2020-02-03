@@ -204,10 +204,10 @@ uglyURLs = false
 
 ## 首页的底部链接
     [[menu.home]]
-        url = "/posts/"
+        url = "/archives/"
         weight = 1
         pre = "internal"
-        post = "home"
+        post = "archive"
         identifier = "icon1"
     [[menu.home]]
         url = "/categories/"

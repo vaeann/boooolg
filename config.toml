@@ -210,7 +210,7 @@ uglyURLs = false
         post = "archive"
         identifier = "icon1"
     [[menu.home]]
-        url = "/doing/"
+        url = "/linya/"
         weight = 2
         pre = "internal"
         post = "heart"

@@ -12,7 +12,7 @@
                     {{ .Content }}
                     <div style="text-align: center">❤ uoY evoL aynilgneF</div>
                     <hr class="coldplay" />
-                    <div class="coldplay-footer">— {{ with .Params.info }}{{ printf `%s | ` (. | markdownify) | safeHTML }}{{ end }}more @ <a href="/linya/">一起做的事</a></div>
+                    <div class="coldplay-footer">{{ with .Params.info }}{{ printf `%s | ` (. | markdownify) | safeHTML }}{{ end }}more @ <a href="/linya/">一起做的事</a></div>
                 </div>
             </article>
         </div>

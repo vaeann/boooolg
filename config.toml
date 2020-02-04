@@ -207,7 +207,7 @@ uglyURLs = false
         url = "/archives/"
         weight = 1
         pre = "internal"
-        post = "archive"
+        post = "folder"
         identifier = "icon1"
     [[menu.home]]
         url = "/linya/"
@@ -231,7 +231,7 @@ uglyURLs = false
     ## 社交栏
     [[menu.socials]]
         url = "https://weibo.com/vaeann"
-        name = "weibo"
+        name = "Weibo"
         weight = 1
         pre = "external"
     [[menu.socials]]

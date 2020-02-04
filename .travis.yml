@@ -10,7 +10,7 @@ env:
    # Github Pages
    - GH_REF: github.com/vaeann/vaeann.github.io
    - HUGO_ENV: production
-   - Coding_REF: e.coding.net/vaeann/vaeann.git
+   - CODING_REF: e.coding.net/vaeann/vaeann.git
 # Specify which branches to build using a safelist
 # 分支白名单限制：只有 master 分支的提交才会触发构建
 # branches:
@@ -42,11 +42,11 @@ script:
   # coding pages
   #- cd ./public
   #- git init
-  #- git config user.name "vaeann"
-  #- git config user.email "77veie@gmail.com"
+  - git config user.name "vaeann"
+  - git config user.email "77veie@gmail.com"
   - git add .
-  - git commit -m "Travis CI 自动部署"
-  - git push --force "https://vaeann:$CODING_TOKEN@${Coding_REF}" master:master
+  #- git commit -m "Travis CI 自动部署"
+  - git push --force "https://vaeann:$CODING_TOKEN@${CODING_REF}" master:master
 # before_deploy:
 #   # 防止其与 mogeko.github.io 冲突
 #   - rm -f CNAME

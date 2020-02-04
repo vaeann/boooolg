@@ -42,7 +42,7 @@ script:
   # coding pages
   #- cd ./public
   #- git init
-  - git config user.name "vaeann"
+  - git config user.name "15248054105"
   - git config user.email "77veie@gmail.com"
   - git add .
   #- git commit -m "Travis CI 自动部署"

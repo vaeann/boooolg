@@ -7,6 +7,9 @@ info = "[*Mylo Xyloto Tour*](https://timeline.coldplay.com/show/stade-de-france/
 tags = ["coldplay"]
 weight = 1
 +++
+<audio src="http://m10.music.126.net/20200204180956/a4efb2ae5c2a77ff5430380b011123da/ymusic/4f9e/8156/ed1c/34e8fef0e03c22975020fc26ce13d3f8.mp3" controls="controls" autoplay="autoplay">
+Your browser does not support the audio tag.
+</audio>
 ![](https://ipfs.globalupload.io/QmbBcjcqz9WFqtUp1CXiXSvkym2KHshWeQsH2gMJJW54AW "-----")
 ![](https://ipfs.globalupload.io/QmdUgchdnenqzUUhF3cm1qomBTn5Ev1efMnrSHETH27ypW "-----")
 ![](https://ipfs.globalupload.io/QmWs5mDpRcFEnrgB5zRuK1GpRuC8ekUJU4LdSgFDRg12FH "-----")

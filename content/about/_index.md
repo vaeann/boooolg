@@ -2,22 +2,15 @@
 title = "ABOUT"
 date = "2019-06-02T22:55:00+08:00"
 keywords = ["about", "关于此博客", "reuixiy"]
+comments = true
 +++
+![hello-world.jpg](/images/hello-world.jpg)
+欢迎来到 VaeAnn 的博客！名字是什么来源呢？其实是 唯安 的英文版（为啥不是英文名，因为咱也不懂英语啊！😄），甭管念什么..喜欢就好..🙃
 
-<video src="QmZgXJwFNRAyUEuU36jReXtyjESeTWEGZpcJGuWSnbRTf1" poster="../images/viva-la-vida.jpg" controls></video>
+#最底下有留言板，我可以收到留言提醒，当然你写上自己的邮箱也可以收到我的留言回复通知！
 
-<h2 class="viva-la-vida">Viva La Vida</h2>
 
-<p style="text-align:center"><i>I used to rule the world<br>
-Seas would rise when I gave the word<br>
-Now in the morning I sleep alone<br>
-Sweep the streets I used to own</i></p>
-
----
-
-你好！欢迎来到 VaeAnn 的博客！名字是什么来源呢？其实是 唯安 的英文版（为啥不是英文名，因为咱也不懂英语啊！😄），甭管念什么..喜欢就好..🙃
 为什么我要搭建博客呢？因为本人喜欢发呆，喜欢胡思乱想，虽然脑子有很多东西，但是我是及其不喜欢写下来的（本子上也不喜欢写）。自从参加工作后同事经常告诉我："好记性不如烂笔头" 再加上年纪增长记忆力下降的明显，只好做一些简单的记录，试着记录的时候有几个地方：
-
 1. 美观问题，我的字写的~~不可以~~（难看）
 2. 排版问题，看起来乱糟糟，阅读困难
 3. 分类问题，遇到过这问题的应该能理解
@@ -32,8 +25,6 @@ Sweep the streets I used to own</i></p>
 3. 页面布局，欣赏的人自然懂
 
 最重要的是自己这个小白可以折腾得起，并且适合我这个极简主义者 + 完美主义者。开始搭建时，就希望治疗我这个懒癌晚期患者，给我继续书写的动力，结果嘛，还是有点点用的。
-
----
 
 此外，本博客是一个 ~~[PWA](https://developers.google.com/web/progressive-web-apps/) 站点~~，你可以通过浏览器添加本博客到你的手机主屏或电脑桌面，随时随地查看本博客。如果你想订阅本博客，推荐 <a href="/atom.xml" target="_blank" rel="noopener">Atom</a>╱<a href="/rss.xml" target="_blank" rel="noopener">RSS</a>。当然，你也可以经常访问本博客，以及时获取到最新文章。
 

@@ -2,10 +2,11 @@
     <main class="main list" id="main">
         <div class="main-inner">
             <div class="content list-coldplay">
-                <h1 class="list-title">{{ .Title }}</h1>
+                <h1 class="list-title">{{ .Title }} </h1>
                 <div class="post-body">
-				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=575 height=86 src="//music.163.com/outchain/player?type=2&id=418603441&auto=1&height=66"></iframe>
                     <hr class="coldplay" />
+					
+                        <meting-js auto="https://music.163.com/#/song?id=413812448" list-folded=true></meting-js> 
                     {{ with .Params.banner }}
                         <img src="{{ . }}" alt="{{ path.Base . }}"{{ if $.Site.Params.enableMediumZoom }} data-zoomable{{ end }} />
                     {{ end }}
@@ -21,4 +22,6 @@
             </div>
         </div>
     </main>
+	
+
 {{ end }}

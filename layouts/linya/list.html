@@ -4,6 +4,7 @@
             <div class="content list-coldplay">
                 <h1 class="list-title">{{ .Title }}</h1>
                 <div class="post-body">
+				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=575 height=86 src="//music.163.com/outchain/player?type=2&id=418603441&auto=1&height=66"></iframe>
                     <hr class="coldplay" />
                     {{ with .Params.banner }}
                         <img src="{{ . }}" alt="{{ path.Base . }}"{{ if $.Site.Params.enableMediumZoom }} data-zoomable{{ end }} />
@@ -14,7 +15,8 @@
                         {{ end }}
                     </ul>
                     <hr class="coldplay" />
-                    <div class="coldplay-footer">— updated  {{  "2020-01-05 13:14:20" }} @ <a href="/">回到主页</a></div>
+					
+                    <div class="coldplay-footer"> updated  {{  "2020-01-05 13:14:20" }} @ <a href="/">回到主页</a></div>
                 </div>
             </div>
         </div>

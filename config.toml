@@ -240,8 +240,8 @@ uglyURLs = false
     #     weight = 2
     #    pre = "external"
     [[menu.socials]]
-        url = "vaeann@qq.com"
-        name = "Email"
+        url = "https://t.me/vaeann"
+        name = "Telegram"
         weight = 3
         pre = "external"
 

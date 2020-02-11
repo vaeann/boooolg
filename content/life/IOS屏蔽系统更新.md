@@ -1,6 +1,6 @@
 +++
 title = "IOS屏蔽系统更新"
-date = "2020-02-12"
+date = "2020-02-12T01:33:20+08:00"
 tags = ["IOS系统", "屏蔽更新","Iphone"]
 slug = "ios-ota"
 type = "poetry"

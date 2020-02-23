@@ -1,6 +1,8 @@
 <head{{ if .Site.Params.openGraph }} prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#"{{ end }}>
     <meta charset="UTF-8" />
 
+    {{ hugo.Generator }}
+
     {{- with .Site.Params.defaultTheme | default "light" -}}
         {{- if eq . "light" -}}
             <meta name="theme-color" content="{{ $.Site.Params.themeColor }}" />
@@ -15,25 +17,25 @@
             const userPrefers = localStorage.getItem('theme');
             const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
             const lightModeMediaQuery = window.matchMedia('(prefers-color-scheme: light)');
-            if (userPrefers === "dark") {
-                changeModeMeta("dark");
-            } else if (userPrefers === "light") {
-                changeModeMeta("light");
+            if (userPrefers === 'dark') {
+                changeModeMeta('dark');
+            } else if (userPrefers === 'light') {
+                changeModeMeta('light');
             } else if (darkModeMediaQuery.matches) {
-                changeModeMeta("dark");
+                changeModeMeta('dark');
             } else if (lightModeMediaQuery.matches) {
-                changeModeMeta("light");
+                changeModeMeta('light');
             }
-            function changeModeMeta() {
-                document.documentElement.setAttribute('data-theme', arguments[0]);
-                if (arguments[0] === "dark") {
-                    changeThemeColor("{{ .Site.Params.themeColorDark }}");
+            function changeModeMeta(theme) {
+                document.documentElement.setAttribute('data-theme', theme);
+                if (theme === 'dark') {
+                    changeThemeColor('{{ .Site.Params.themeColorDark }}');
                 } else {
-                    changeThemeColor("{{ .Site.Params.themeColor }}");
+                    changeThemeColor('{{ .Site.Params.themeColor }}');
                 }
             }
-            function changeThemeColor() {
-                document.querySelector('meta[name="theme-color"]').setAttribute('content', arguments[0]);
+            function changeThemeColor(themeColor) {
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColor);
             }
         </script>
     {{- end }}
@@ -51,20 +53,14 @@
 
     <!-- Responsive Web Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
-    <!-- Old Old IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <!-- Avoid Automatic Format Detection -->
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
     <!-- Avoid Transcoding -->
     <meta http-equiv="Cache-Control" content="no-transform" />
     <!-- Avoid Baidu Mobile Search Transcoding -->
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <!-- Dual-core Browser -->
-    <meta name="renderer" content="webkit" />
 
-    {{ hugo.Generator }}
-
-    {{ partial "components/title.html" . }}
+    {{ partial "utils/title.html" . }}
     {{- $title := .Scratch.Get "title" -}}
     <title>{{ $title }}</title>
 
@@ -77,27 +73,27 @@
     {{- end }}
 
     <meta name="author" content="{{ .Params.author | default .Site.Author.name }}" />
-    {{ partial "components/summary.html" . }}
+    {{ partial "utils/summary.html" . }}
     {{- $description := .Description | default (.Scratch.Get "summary" | plainify | replaceRE `\n……` ``) | default .Site.Params.siteDescription | plainify -}}
     <meta name="description" content="{{ $description }}" />
-    {{ partial "components/keywords.html" . }}
+    {{ partial "utils/keywords.html" . }}
     {{- $keywordsDefault := (strings.TrimSuffix ", " ($.Scratch.Get "keywordsDefault")) -}}
     {{- $keywordsSite := (strings.TrimSuffix ", " ($.Scratch.Get "keywordsSite")) -}}
     {{- $keywordsPost := (strings.TrimSuffix ", " ($.Scratch.Get "keywordsPost")) -}}
     {{- $keywordsFrontMatter := (strings.TrimSuffix ", " ($.Scratch.Get "keywordsFrontMatter")) -}}
     {{- $keywords := $keywordsFrontMatter | default $keywordsPost | default $keywordsSite | default $keywordsDefault -}}
     <meta name="keywords" content="{{ $keywords }}" />
-    
+
     <!-- Favicon, Icons, Web App -->
     {{- $favicon := "favicon.ico" -}}
     {{- $safariMaskIcon := "icons/safari-pinned-tab.svg" -}}
     {{- $safariMaskColor := .Site.Params.safariMaskColor -}}
     {{- $appleTouchIcon := "icons/apple-touch-icon.png" -}}
-    {{- partial "components/relative-url.html" (dict "Deliver" . "filename" "") -}}
+    {{- partial "utils/relative-url.html" (dict "Deliver" . "filename" "") -}}
     {{- $url := .Scratch.Get "url" -}}
     {{- $msApplicationStartURL := $url -}}
     {{- $msApplicationTileColor := .Site.Params.msApplicationTileColor -}}
-    {{- partial "components/relative-url.html" (dict "Deliver" . "filename" "icons/mstile-150x150.png") -}}
+    {{- partial "utils/relative-url.html" (dict "Deliver" . "filename" "icons/mstile-150x150.png") -}}
     {{- $url := .Scratch.Get "url" -}}
     {{- $msApplicationTileImage := $url -}}
     {{- $manifest := "manifest.json" -}}
@@ -127,16 +123,16 @@
     {{- $Deliver := . -}}
     <!-- JSON-LD -->
     {{- with .Site.Params.jsonLD -}}
-        {{ partial "components/json-ld.html" (dict "Deliver" $Deliver "description" $description "keywords" $keywords) }}
+        {{ partial "utils/json-ld.html" (dict "Deliver" $Deliver "description" $description "keywords" $keywords) }}
     {{- end }}
 
     <!-- Twitter Cards -->
     {{- with .Site.Params.twitterCards -}}
-        {{ partial "components/twitter-cards.html" (dict "Deliver" $Deliver) }}
+        {{ partial "utils/twitter-cards.html" (dict "Deliver" $Deliver) }}
     {{- end }}
     <!-- Open Graph -->
     {{- with .Site.Params.openGraph -}}
-        {{ partial "components/open-graph.html" (dict "Deliver" $Deliver "description" $description "keywords" $keywords) }}
+        {{ partial "utils/open-graph.html" (dict "Deliver" $Deliver "description" $description "keywords" $keywords) }}
     {{- end }}
 
     {{- with .Site.Params.googleSiteVerification }}
@@ -156,6 +152,10 @@
     {{- if and .Site.Params.enableGoogleAutoAds (eq hugo.Environment "production") -}}
         {{ partial "third-party/google-adsense-auto.html" . }}
     {{- end }}
+
+    {{ if and .Site.Params.enablePostShare .Site.Params.shareViaQRCode }}
+        {{ partial "third-party/qrcode-generator.html" . }}
+    {{ end }}
 
     {{ partial "custom/head.html" . }}
 	

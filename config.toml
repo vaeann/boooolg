@@ -1076,7 +1076,32 @@ uglyURLs = false
     # 编辑链接的文本
     editText = "Edit Me?"
 
+ ######################################
+    # 文章分享
 
+    # 是否开启
+    enablePostShare = true
+
+    # 是否显示（全局设置）
+    displayPostShare = true
+    # 说明：文章的 Front Matter 中的 `share`
+    #      的优先级高于此处
+
+    displayShareOnText = false
+
+    shareOnTwitter = true
+    shareOnFacebook = true
+    shareOnLinkedIn = true
+    shareOnTelegram = true
+    shareOnWeibo = true
+    shareOnDouban = true
+    shareOnQQ = true
+    shareOnQzone = true
+
+    shareViaQRCode = true
+
+
+    ######################################
     ######################################
     # 相关文章
 

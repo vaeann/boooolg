@@ -47,7 +47,7 @@ script:
   - git add .
   #- git commit -m "Travis CI 自动部署"
   - git push --force --quiet "https://15248054105:$CODING_TOKEN@${CO_REF}" master:master
-  #- git push --quiet "https://15248054105:$CODING_TOKEN@${GO_REF}" master:master --tags
+  - git push --quiet "https://15248054105:$CODING_TOKEN@${GO_REF}" master:master --tags
 # before_deploy:
 #   # 防止其与 mogeko.github.io 冲突
 #   - rm -f CNAME

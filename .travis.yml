@@ -29,22 +29,22 @@ install:
 script:
   - cd ./public
   - git init
-  - git config user.name "vaeann"
-  - git config user.email "37549839@qq.com"
+  #- git config user.name "vaeann"
+  #- git config user.email "37549839@qq.com"
   - echo "weian.ml" > CNAME
   - git config --local --add receive.shallowUpdate true
   - git add .
-  - git commit -m "Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER"
+  #- git commit -m "Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER"
   # Github Pages
-  - git push --force --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master
+ # - git push --force --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master
   # Github Pages
-  - git push --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master --tags
+ # - git push --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master --tags
   # coding pages
   #- cd ./public
   #- git init
   - git config user.name "15248054105"
   - git config user.email "77veie@gmail.com"
-  - git add .
+  #- git add .
   #- git commit -m "Travis CI 自动部署"
   - git push --force "https://15248054105:$CODING_TOKEN@${CO_REF}" master:master
   #- git push --quiet "https://15248054105:$CODING_TOKEN@${GO_REF}" master:master --tags

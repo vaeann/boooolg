@@ -2,7 +2,7 @@
 # 站点配置
 
 baseURL = "https://weian.ml"
-title = "Naive"
+title = "VaeAnn"
 languageCode = "zh-CN"
 hasCJKLanguage = true
 # 版权信息（支持 Markdown）
@@ -96,13 +96,13 @@ uglyURLs = false
     # 邮箱
     email = "77veie@gmail.com"
     # 座右铭或简介
-    motto = "陪喜欢的人过向往的生活！"
+    motto = "一起过向往的生活！"
     # 头像
     avatar = "/icons/apple-touch-icon.png"
     # 网站（默认值：baseURL）
     website = "https://weian.ml"
     # 推特
-    twitter = "vei7"
+    twitter = ""
 
 # 相关文章
 [related]

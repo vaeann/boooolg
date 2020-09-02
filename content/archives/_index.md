@@ -1,4 +1,4 @@
 +++
-title = "归档"
+title = "Archives"
 banner = "/images/coldplay.jpg"
 +++
